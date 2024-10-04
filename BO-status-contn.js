@@ -1,16 +1,26 @@
 export async function updateOrderStatus(fyers, orderInformation) {
-    const { parentOrder, stopOrder, profitOrder } = orderInformation;
-
+    let { parentOrder, stopOrder, profitOrder } = orderInformation;
+    console.log(orderInformation,  parentOrder, stopOrder, profitOrder)
     // Set up an interval to update and print order status every 5 seconds
     const intervalId = setInterval(async () => {
         try {
             // Fetch all orders
-            const ordersResponse = await fyers.get_orders();
-            
+            //const ordersResponse = await fyers.get_orders();
+            //console.clear();
+            //console.log("received in contn", ordersResponse);
             // Function to find order status by order ID
             const findOrderStatus = (orderId) => {
-                const order = (ordersResponse.orderBook).find(order => order.id.includes(orderId));
-                return order ? order.status : undefined; // Return status if found, otherwise undefined
+                fyers.get_filtered_orders({order_id: orderId      
+                }).then(order=>{
+                    console.log('from orderbook', order.orderBook);
+                     const myorder = (order.orderBook).find(searchorder => searchorder.id === orderId);
+                console.log("inside", order, myorder );
+                return myorder ? myorder.status : undefined; // Return status if found, otherwise undefined
+
+                })
+                // const order = (ordersResponse.orderBook).find(order => order.id === orderId);
+                // console.log("inside", order, orderId );
+                // return order ? order.status : undefined; // Return status if found, otherwise undefined
             };
 
             // Update parent order status
@@ -18,16 +28,22 @@ export async function updateOrderStatus(fyers, orderInformation) {
                 parentOrder.status = findOrderStatus(parentOrder.orderId);
             }
 
+
             // Update stop order status
             if (stopOrder.orderId) {
-                stopOrder.status = findOrderStatus(stopOrder.orderId);
+                if(findOrderStatus(stopOrder.orderId) !== undefined){
+                    stopOrder.status = findOrderStatus(stopOrder.orderId);
+                    console.log('stoporder info', stopOrder)
+                }
             }
 
             // Update profit order status
             if (profitOrder.orderId) {
-                profitOrder.status = findOrderStatus(profitOrder.orderId);
+                if(findOrderStatus(profitOrder.orderId) !== undefined){
+                    profitOrder.status = findOrderStatus(profitOrder.orderId);
+                    console.log('profitOrder info', profitOrder)
+                }
             }
-
             // Log updated order information
             console.log("Updated Order Information:", JSON.stringify({
                 parentOrder,
@@ -39,12 +55,12 @@ export async function updateOrderStatus(fyers, orderInformation) {
             if (stopOrder.status === 2) {
                 clearInterval(intervalId);
                 console.log("Stop trade completed, stopping updates.");
-                return {OrderType: 'stopOrder', Price:stopOrder.tradedPrice, Time : stopOrder.orderDateTime.split(' ')[1], Profit: Math.round(parentOrder.tradedPrice - stopLossOrder.tradedPrice) };
+                return { OrderType: 'stopOrder', Price: stopOrder.tradedPrice, Time: stopOrder.orderDateTime.split(' ')[1], Profit: Math.round(parentOrder.tradedPrice - stopLossOrder.tradedPrice) };
 
-            } else if(profitOrder.status === 2){
+            } else if (profitOrder.status === 2) {
                 clearInterval(intervalId);
                 console.log("Profit trade completed, stopping updates.");
-                return {OrderType: 'profitOrder', Price:profitOrder.tradedPrice, Time : profitOrder.orderDateTime.split(' ')[1], Profit: Math.round(stopLossOrder.tradedPrice - parentOrder.tradedPrice) };
+                return { OrderType: 'profitOrder', Price: profitOrder.tradedPrice, Time: profitOrder.orderDateTime.split(' ')[1], Profit: Math.round(stopLossOrder.tradedPrice - parentOrder.tradedPrice) };
             }
 
         } catch (error) {

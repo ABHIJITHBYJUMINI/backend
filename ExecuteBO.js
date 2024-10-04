@@ -1,7 +1,7 @@
 // placeBracketOrder.js
 export async function placeBracketOrder(fyers, symbol, price, acceptedProfit, qty) {
     try {
-        const stopLoss = 0.25;       // Customize your stop-loss percentage
+        const stopLoss = 0.2;       // Customize your stop-loss percentage
         // Prepare the request body for the bracket order (BO)
         const reqBody = {
             symbol: symbol,                  // Symbol to trade
@@ -28,25 +28,27 @@ export async function placeBracketOrder(fyers, symbol, price, acceptedProfit, qt
             // Return a JSON array with order info
             return {
                 parentOrder: {
-                    orderId: orderDetails,            // Parent order ID
+                    orderId: orderDetails + '-BO-1',            // Parent order ID
                     symbol: symbol,                   // Symbol of the trade
                     orderType: "BO",                  // Bracket Order type
                     price: price,                     // Price at which the parent order was placed
-                    status: response.status,          // Status of the parent order
+                    status: 2          // Status of the parent order
                 },
                 stopOrder: {
-                    orderId: response.sl_id,          // Stop-loss order ID
-                    price: Math.round(price * stopLoss),  // Stop-loss price
-                    status: "PENDING",                // Initial status for stop-loss order
+                    orderId: orderDetails + '-BO-2',          // Stop-loss order ID
+                    symbol: symbol ,                   // Symbol of the trade
                     orderType: "STOP_LOSS",           // Order type for stop-loss
-                    symbol: symbol                    // Symbol of the trade
+                    price: Math.round(price * stopLoss),  // Stop-loss price
+                    status: 6                // Initial status for stop-loss order
+                    
+                   
                 },
                 profitOrder: {
-                    orderId: response.tp_id,          // Take-profit order ID
-                    price: Math.round(price * acceptedProfit),  // Take-profit price
-                    status: "PENDING",                // Initial status for take-profit order
+                    orderId: orderDetails + '-BO-3',          // Take-profit order ID
+                    symbol: symbol,                    // Symbol of the trade
                     orderType: "TAKE_PROFIT",         // Order type for take-profit
-                    symbol: symbol                    // Symbol of the trade
+                    price: Math.round(price * acceptedProfit),  // Take-profit price
+                    status: 6                // Initial status for take-profit order
                 }
             };
         } else {
