@@ -1,8 +1,11 @@
+
 export async function updateOrderStatusOneTime(fyers, orderInformation) {
     let { parentOrder, stopOrder, profitOrder } = orderInformation;
     console.log(orderInformation);
     try {
         // Fetch all orders
+
+
         const ordersResponse = await fyers.get_orders();
         console.log(ordersResponse.orderBook);
         // Function to find order status by order ID
@@ -39,5 +42,4 @@ export async function updateOrderStatusOneTime(fyers, orderInformation) {
         throw error;
     }
 }
-
 
