@@ -1,0 +1,1610 @@
+NEWLINE + 2024-10-11T04:56:31.151Z
+{
+  "type": "cn",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T04:56:31.378Z
+{
+  "type": "lit",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T04:56:31.384Z
+{
+  "type": "sub",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T04:56:31.389Z
+{
+  "type": "cp",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T04:56:31.429Z
+{
+  "type": "cr",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T04:56:31.461Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 166.05,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.461Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 297.05,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.462Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 208.15,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.462Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 172,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.462Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 140.9,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.463Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 308.35,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.462Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 120.1,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.463Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 348.8,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.463Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 228.75,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.463Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 250.15,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.463Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 194.8,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.738Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 165.95,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.739Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 297.15,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.739Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 171.5,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.739Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 141.35,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.740Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 229,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.740Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 249.7,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:31.869Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 120.5,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.083Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 166.5,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.763Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 166.7,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.763Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 298.25,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.763Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 207.7,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.764Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 171.85,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.765Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 309.6,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.765Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 120.25,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.766Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 348.55,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.766Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 228.5,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.766Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 250.75,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:32.767Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 195.4,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.174Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 171.9,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.175Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 228.25,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.304Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 208.7,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.304Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 307.75,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.305Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 349.55,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.305Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 195,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.987Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 166,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.987Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 298.2,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.987Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 141.3,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.988Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 349.45,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.988Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 228.3,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:33.988Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 250.25,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.266Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 208.2,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.266Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 308.8,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.267Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 349,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.266Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 119.7,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.267Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 194.75,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.708Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 166.3,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.709Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 296.85,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.709Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 171.35,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.710Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 120.5,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.710Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 229,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:34.710Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 249.7,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.089Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 296.6,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.089Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 309.5,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.090Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 347.5,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.090Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 229.6,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.509Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 207.2,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.509Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 170.7,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.510Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 120.55,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.510Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 309.55,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.510Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 348.2,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.510Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 229.7,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.511Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 248.7,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.511Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 196,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.918Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 167.1,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.918Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 296.65,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.919Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 207.45,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.919Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 249.35,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:35.919Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 141.55,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.371Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 207,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.371Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 141.6,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.372Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 121,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.372Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 310.4,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.372Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 347.5,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.373Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 195.75,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.728Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 295.65,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.728Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 170.8,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.728Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 142.45,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.727Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 166.85,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.728Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 230.7,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.729Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 248.5,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:36.729Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 196.75,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.121Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 167.65,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.121Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 206.3,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.642Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 167.8,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.642Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 295.15,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.643Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 170.2,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.643Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 142.55,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.643Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 310.7,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.644Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 346.3,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.644Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 230.15,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.644Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 248,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:37.768Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 197.1,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.253Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 206.2,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.254Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 311.65,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.254Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 346,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.254Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 230.25,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.771Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 168,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.771Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 294.5,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.772Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 170,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.772Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 142.45,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.772Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 121.45,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.772Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 311.6,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.773Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 346.55,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.773Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 230.9,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:38.773Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 247.5,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.137Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 169.95,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.137Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651300PE",
+  "ltp": 231,
+  "vol_traded_today": 9941340,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.348Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 168.35,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.348Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 121.7,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.348Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 205.3,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.348Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 312.85,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.349Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 246.75,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.348Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 345,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.349Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 197.8,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.959Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 293.3,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.959Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 143.15,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:39.959Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 246.8,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.348Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 205,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.348Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 169.1,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.348Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 122,
+  "vol_traded_today": 2302635,
+  "last_traded_time": 1728622587,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.348Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500PE",
+  "ltp": 312.3,
+  "vol_traded_today": 11872635,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.349Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 344.25,
+  "vol_traded_today": 15264360,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.349Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 197.7,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.598Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 294.05,
+  "vol_traded_today": 7196700,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.598Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 205.15,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.598Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 169.6,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.598Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 143.1,
+  "vol_traded_today": 7319490,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.599Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 197.8,
+  "vol_traded_today": 5297475,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.761Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 168.5,
+  "vol_traded_today": 3322890,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:40.762Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 247.2,
+  "vol_traded_today": 5695260,
+  "last_traded_time": 1728622589,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:41.187Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651900CE",
+  "ltp": 169.9,
+  "vol_traded_today": 3615705,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T04:56:41.524Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 205.55,
+  "vol_traded_today": 4808490,
+  "last_traded_time": 1728622590,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:31.592Z
+{
+  "type": "cn",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T05:13:32.081Z
+{
+  "type": "sub",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T05:13:32.080Z
+{
+  "type": "lit",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T05:13:32.092Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 223,
+  "vol_traded_today": 4199055,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.092Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 219.55,
+  "vol_traded_today": 8620425,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.081Z
+{
+  "type": "cp",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T05:13:32.093Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 148.05,
+  "vol_traded_today": 5916525,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.094Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 190.1,
+  "vol_traded_today": 9238140,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.095Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 163.1,
+  "vol_traded_today": 2874225,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.096Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650800PE",
+  "ltp": 138.25,
+  "vol_traded_today": 3326835,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.098Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651400CE",
+  "ltp": 311.3,
+  "vol_traded_today": 13143465,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.098Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 181.25,
+  "vol_traded_today": 6771675,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.097Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 262.1,
+  "vol_traded_today": 18417210,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.099Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 259.5,
+  "vol_traded_today": 6729150,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.082Z
+{
+  "type": "cr",
+  "s": "ok",
+  "message": "successful",
+  "code": 200
+}
+
+NEWLINE + 2024-10-11T05:13:32.100Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 148.5,
+  "vol_traded_today": 5916525,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.101Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 162.55,
+  "vol_traded_today": 2874225,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.101Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 262.3,
+  "vol_traded_today": 18417210,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.102Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 259.45,
+  "vol_traded_today": 6729150,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.415Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 221.8,
+  "vol_traded_today": 4199055,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.416Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 220.25,
+  "vol_traded_today": 8620425,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.418Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 189.6,
+  "vol_traded_today": 9238140,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.418Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 181.85,
+  "vol_traded_today": 6771675,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.826Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 149.2,
+  "vol_traded_today": 5916525,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.827Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 161.4,
+  "vol_traded_today": 2874225,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.831Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650800PE",
+  "ltp": 137.7,
+  "vol_traded_today": 3326835,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.834Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 263.8,
+  "vol_traded_today": 18417210,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.836Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651400CE",
+  "ltp": 313.3,
+  "vol_traded_today": 13143465,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:32.839Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 258.75,
+  "vol_traded_today": 6729150,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:33.176Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651100PE",
+  "ltp": 220.5,
+  "vol_traded_today": 4199055,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:33.177Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651600CE",
+  "ltp": 221.9,
+  "vol_traded_today": 8620425,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:33.182Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 149.8,
+  "vol_traded_today": 5916525,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:33.184Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651000PE",
+  "ltp": 188.8,
+  "vol_traded_today": 9238140,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:33.186Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651700CE",
+  "ltp": 182.85,
+  "vol_traded_today": 6771675,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:33.189Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 258.05,
+  "vol_traded_today": 6729150,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:33.672Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650800PE",
+  "ltp": 136.3,
+  "vol_traded_today": 3326835,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:33.673Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651400CE",
+  "ltp": 314.95,
+  "vol_traded_today": 13143465,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:34.068Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651800CE",
+  "ltp": 150.7,
+  "vol_traded_today": 5916525,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:34.069Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650900PE",
+  "ltp": 160.6,
+  "vol_traded_today": 2874225,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:34.074Z
+{
+  "symbol": "NSE:BANKNIFTY24O1650800PE",
+  "ltp": 136,
+  "vol_traded_today": 3326835,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:34.076Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651500CE",
+  "ltp": 265.85,
+  "vol_traded_today": 18417210,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
+NEWLINE + 2024-10-11T05:13:34.079Z
+{
+  "symbol": "NSE:BANKNIFTY24O1651200PE",
+  "ltp": 256,
+  "vol_traded_today": 6729150,
+  "last_traded_time": 1728623610,
+  "type": "sf"
+}
+
