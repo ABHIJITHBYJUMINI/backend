@@ -2,7 +2,7 @@ export async function placeBracketOrder(fyers, symbol, price, acceptedProfit, qt
     try {
         //const stopLoss = 0.05;       // Customize your stop-loss percentage
         const stopLoss = 0.1; 
-        console.log('symbol', symbol, 'price', price, 'acceptedProfit', acceptedProfit, 'stopLoss', 'qty', Math.round(price * stopLoss), 'StopProfit', Math.round(price * acceptedProfit));
+        console.log('symbol', symbol, 'price', price, 'acceptedProfit', acceptedProfit, 'stopLoss', Math.round(price * stopLoss), 'StopProfit', Math.round(price * acceptedProfit));
         const reqBody = {
             symbol: symbol,                  // Symbol to trade
             qty: qty,                        // Quantity
@@ -57,6 +57,5 @@ export async function placeBracketOrder(fyers, symbol, price, acceptedProfit, qt
         }
     } catch (error) {
         console.error("Error updating order status:", error);
-        clearInterval(intervalId); // Clear interval on error
     }
 }

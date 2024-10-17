@@ -12,6 +12,7 @@ export async function updateOrderStatus(fyers, orderInformation) {
              const allorders = await fyers.get_orders();
              const profitorderiffound = (allorders.orderBook).find(searchorder => searchorder.parentId === parentOrder.orderId && (searchorder.id).slice(-5) === '-BO-3');
              const stoporderiffound = (allorders.orderBook).find(searchorder => searchorder.parentId === parentOrder.orderId && (searchorder.id).slice(-5) === '-BO-2');
+             console.log('Profit:', profitorderiffound.status, '/ Stop :', stoporderiffound.status);
              if(profitorderiffound.status == 2){
                 clearInterval(intervalId);
                 console.log("Profit trade completed, END for day.");

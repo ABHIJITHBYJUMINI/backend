@@ -21,7 +21,7 @@ app.use(pkgparser.urlencoded({ extended: true })); // Parses URL-encoded request
 import { fyersModel, fyersDataSocket } from "fyers-api-v3";
 var fyers = new fyersModel({ "logs": "path where you want to save logs", "enableLogging": false });
 var appidsaved = "XBDVKT3M7D-100";
-var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MjkwNDg3OTMsImV4cCI6MTcyOTEyNTA1MywibmJmIjoxNzI5MDQ4NzkzLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbkR6RFpsRG9idnhNUjhWb1I3WFB5bmVNLUZxTmhQa192RDlyRFgza2ZLeDZzMlE0dXFsZGs4dmlhVEJsZ2d5R1ZLR1lIM0JlRlM3czdQYVFPVWFVenJ0Ulc5RU1mNkFxWmZsVTUzamI2ZE5TY0Jxbz0iLCJkaXNwbGF5X25hbWUiOiJBQkhJSklUSCBCWUpVIE1JTkkiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJmMTg2YjdkYzZjYzJkYmZiYmIzMjU2YTJhMGZlYjY1OGU3OWViMjYwYjhmM2UzOGViNjE1ZTUwNiIsImZ5X2lkIjoiWUEyMzIxMSIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.phLk158ej2yhkY06DvFhlcSPYsqO7hM7A45M4He9FQk";
+var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MjkxMzY0NDYsImV4cCI6MTcyOTIxMTQ0NiwibmJmIjoxNzI5MTM2NDQ2LCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbkVJYy0yMmx1bXdZUnJuRjlLaTNfMVpFX0xKdDdzOWdOOTRNZDJBZEVfM0t2UGkwT3pJOWJaZWE4QndVSGZzM3lUTnBfdkhzOE92blhxY3l3VUlYSzc0WUNzWnBiY2VfYVZURTdsUFphN3pOWFd5VT0iLCJkaXNwbGF5X25hbWUiOiJBQkhJSklUSCBCWUpVIE1JTkkiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJmMTg2YjdkYzZjYzJkYmZiYmIzMjU2YTJhMGZlYjY1OGU3OWViMjYwYjhmM2UzOGViNjE1ZTUwNiIsImZ5X2lkIjoiWUEyMzIxMSIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.y0lNZLe3Pu1560MDnWSH4tDoF0AyBkwCoKMmQoUeKJE";
 
 
 
@@ -57,7 +57,7 @@ let selectedpeSymbolPrice = null;
 let ceSymbolnextVal = false;
 let peSymbolnextVal = false;
 
-let currentWeeklyExpiry = "24O16";
+let currentWeeklyExpiry = "24O23";
 
 let subslist = [];
 
@@ -77,7 +77,7 @@ var spotPrice = 0;
 
 var Orderstatus = 'wait';
 var fyersSaved = null;
-var acceptedProfit = 0.1;
+var acceptedProfit = 0.1;//change
 var qty = 15;
 var Order_Information = {
   parentOrder: {
@@ -157,25 +157,31 @@ async function SpotPrice(retries = 3, delayMs = 1000) {
 async function getexactrangePrice(symbolarr) {
   //console.log(symbolarr)
   try {
+    //console.log(symbolarr.length)
     const response = await fyers.getQuotes(symbolarr);
+    //console.log(response)
     for (let i = 0; i < 30; i++) {
-      if (i > 0 && i % 2 == 1) {
+      //console.log(response.d[i].v.lp)
+      if (i > 2 && i % 2 == 1) {
+        //console.log( response.d[i].v.lp + response.d[i + 2].v.lp, 'SUM', response.d[i - 1].v.lp + response.d[i + 1].v.lp)
+        //console.log("i",response.d[i - 1].v.lp + response.d[i - 1].v.lp,          response.d[i].v.lp + response.d[i].v.lp,)
         if (
-          response.d[i - 1].v.lp + response.d[i - 1].v.lp > 200 &&
-          response.d[i].v.lp + response.d[i].v.lp < 200
+          response.d[i - 1].v.lp + response.d[i + 1].v.lp > 200 &&
+          response.d[i].v.lp + response.d[i + 2].v.lp < 200
         ) {
-          selectedceSymbolVal = response.d[i].n;
-          selectedceSymbolPrice = response.d[i].v.lp;
+          selectedceSymbolVal = response.d[i+1].n;
+          selectedceSymbolPrice = response.d[i+1].v.lp;
           selectedpeSymbolVal = response.d[i].n;
           selectedpeSymbolPrice = response.d[i].v.lp;
-
+          //console.log(i)
+          
           return i;
         }
       }
     }
     //console.log(response);
   } catch (error) {
-    console.error("Error fetching Bank Nifty spot price:", error);
+    console.error("Error fetching Bank Nifty spot price:", error,response.d[0].n);
     throw error;
   }
 }
@@ -186,74 +192,93 @@ async function main() {
     if ((new Date().getHours() > 8 && new Date().getMinutes() > 14) || (new Date().getHours() > 9 && new Date().getHours() < 16)) {
       fyersSaved = fyers;
       indexspot = await SpotPrice();
-      if(saveapimessage == '' ){
-        for (let i = 0; i < 15; i++) {
-          ceSymbol = `${indextype}${currentWeeklyExpiry}${Math.round(indexspot - (indexspot % optionspread)) - 300 + 100 * i
-            }CE`;
-          cepesymbolarr.push(ceSymbol);
-          peSymbol = `NSE:BANKNIFTY${currentWeeklyExpiry}${Math.round(
-            indexspot - (indexspot % 100) + 200 - 100 * i
-          )}PE`;
-          cepesymbolarr.push(peSymbol);
-        }
-  
-        const spotmultiPrice = await getexactrangePrice(cepesymbolarr);
-        if (waittillmessage == true) {
-          waittillmessage = false;
-          console.log('START');
-        }
-        cepesymbolarr = [];
-      } else{
-        switch (saveapimessage) {
-          case 'up':
-            saveapimessage = '';
-            if (Orderstatus == 'wait') {
-              Orderstatus = 'InorderCE';
-              console.log('CEInforet', selectedceSymbolPrice, selectedceSymbolVal);
-              Order_Information = await placeBracketOrder(fyersSaved, selectedceSymbolVal, selectedceSymbolPrice, acceptedProfit, qty);
-              console.log('Waiting for loss / profit');
-  
-              Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
-              if (Past_orders.OrderType == 'stopOrder') {
-                acceptedProfit = acceptedProfit + 0.1;
-                Orderstatus = 'wait'
-                console.log('loss / Waiting for next order');
-                Order_Information = null;
-                Past_orders = null; 
-              }
-              if (Past_orders.OrderType == 'profitOrder') {
-                Orderstatus = 'STOP'
-              }
-            }
-            break;
-  
-          case 'down':
-              saveapimessage = '';
-              Orderstatus = 'InorderPE';
-              console.log('PEInforet', selectedpeSymbolPrice, selectedpeSymbolVal);
-              Order_Information = await placeBracketOrder(fyersSaved, selectedpeSymbolVal, selectedpeSymbolPrice, acceptedProfit, qty);
-              console.log('Waiting for loss / profit');
-              Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
-              if (Past_orders.OrderType == 'stopOrder') {
-                acceptedProfit = acceptedProfit + 0.1;
-                Orderstatus = 'wait'
-                console.log('Profit / Waiting for next order');
-                Order_Information = null;
-                Past_orders = null; 
-              }
-              if (Past_orders.OrderType == 'profitOrder') {
-                Orderstatus = 'STOP'
-              }
-             break;
-        }
+      //console.log(indexspot);
+      for (let i = 0; i < 25; i++) {
+        ceSymbol = `${indextype}${currentWeeklyExpiry}${Math.round(indexspot - (indexspot % optionspread)) - 300 + 100 * i
+          }CE`;
+        cepesymbolarr.push(ceSymbol);
+        peSymbol = `NSE:BANKNIFTY${currentWeeklyExpiry}${Math.round(
+          indexspot - (indexspot % 100) + 200 - 100 * i
+        )}PE`;
+        cepesymbolarr.push(peSymbol);
       }
+
+      const spotmultiPrice = await getexactrangePrice(cepesymbolarr);
+     // console.log(spotmultiPrice)
+      if (waittillmessage == true) {
+        waittillmessage = false;
+        console.log('START',    selectedceSymbolVal, selectedceSymbolPrice, selectedpeSymbolVal ,selectedpeSymbolPrice);
+      }
+      cepesymbolarr = [];
+      
+      // if(saveapimessage == '' ){
+      //   for (let i = 0; i < 15; i++) {
+      //     ceSymbol = `${indextype}${currentWeeklyExpiry}${Math.round(indexspot - (indexspot % optionspread)) - 300 + 100 * i
+      //       }CE`;
+      //     cepesymbolarr.push(ceSymbol);
+      //     peSymbol = `NSE:BANKNIFTY${currentWeeklyExpiry}${Math.round(
+      //       indexspot - (indexspot % 100) + 200 - 100 * i
+      //     )}PE`;
+      //     cepesymbolarr.push(peSymbol);
+      //   }
+  
+      //   const spotmultiPrice = await getexactrangePrice(cepesymbolarr);
+      //   if (waittillmessage == true) {
+      //     waittillmessage = false;
+      //     console.log('START');
+      //   }
+      //   cepesymbolarr = [];
+      // } else{
+      //   // switch (saveapimessage) {
+      //   //   case 'up':
+      //   //     saveapimessage = '';
+      //   //     if (Orderstatus == 'wait') {
+      //   //       Orderstatus = 'InorderCE';
+      //   //       console.log('CEInforet', selectedceSymbolPrice, selectedceSymbolVal);
+      //   //       Order_Information = await placeBracketOrder(fyersSaved, selectedceSymbolVal, selectedceSymbolPrice, acceptedProfit, qty);
+      //   //       console.log('Waiting for loss / profit');
+  
+      //   //       Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
+      //   //       if (Past_orders.OrderType == 'stopOrder') {
+      //   //         acceptedProfit = acceptedProfit + 0.1;
+      //   //         Orderstatus = 'wait'
+      //   //         console.log('loss / Waiting for next order');
+      //   //         Order_Information = null;
+      //   //         Past_orders = null; 
+      //   //       }
+      //   //       if (Past_orders.OrderType == 'profitOrder') {
+      //   //         Orderstatus = 'STOP'
+      //   //       }
+      //   //     }
+      //   //     break;
+  
+      //   //   case 'down':
+      //   //       saveapimessage = '';
+      //   //       Orderstatus = 'InorderPE';
+      //   //       console.log('PEInforet', selectedpeSymbolPrice, selectedpeSymbolVal);
+      //   //       Order_Information = await placeBracketOrder(fyersSaved, selectedpeSymbolVal, selectedpeSymbolPrice, acceptedProfit, qty);
+      //   //       console.log('Waiting for loss / profit');
+      //   //       Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
+      //   //       if (Past_orders.OrderType == 'stopOrder') {
+      //   //         acceptedProfit = acceptedProfit + 0.1;
+      //   //         Orderstatus = 'wait'
+      //   //         console.log('Profit / Waiting for next order');
+      //   //         Order_Information = null;
+      //   //         Past_orders = null; 
+      //   //       }
+      //   //       if (Past_orders.OrderType == 'profitOrder') {
+      //   //         Orderstatus = 'STOP'
+      //   //       }
+      //   //      break;
+      //   // }
+      // }
       
     }
 
     const intervalId = setInterval(async () => {
       if (new Date().getHours() > 8 && new Date().getMinutes() > 14 && Orderstatus !== 'STOP') {
         const indexspot = await SpotPrice();
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < 25; i++) {
           ceSymbol = `${indextype}${currentWeeklyExpiry}${Math.round(indexspot - (indexspot % optionspread)) - 300 + 100 * i
             }CE`;
           cepesymbolarr.push(ceSymbol);
@@ -264,13 +289,15 @@ async function main() {
         }
 
         const spotmultiPrice = await getexactrangePrice(cepesymbolarr);
+        //console.log('291',spotmultiPrice );
         if (waittillmessage == true) {
           waittillmessage = false;
           console.log('START');
+          cepesymbolarr = [];
         }
         cepesymbolarr = [];
       }
-    }, 15000);
+    }, 5000);
   } catch (error) {
     console.error("Error in main function:", error);
   }
@@ -282,7 +309,7 @@ app.post('/api/data', async (req, res) => {
   const { input1, input2, option } = req.body;
   console.log('received', req.body, 'waittillmessage', waittillmessage);
     saveapimessage = req.body;
-    if (Orderstatus == 'wait' && waittillmessage == false && indexspot != 0 && indexspot != 0 ) {
+    if (Orderstatus == 'wait' && waittillmessage == false  ) {
       switch (saveapimessage) {
         case 'up':
           saveapimessage = '';
