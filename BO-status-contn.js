@@ -20,9 +20,11 @@ export async function updateOrderStatus(fyers, orderInformation) {
              }
              //const stoptradestatus = findOrderStatus(stopOrder.orderId);
              if(stoporderiffound.status == 2){
-                clearInterval(intervalId);
                 console.log("Stop trade completed, Try Again.");
+                clearInterval(intervalId);
                 return { OrderType: 'stopOrder', Price: 100, Profit: Math.round(100) };
+
+
              }
         } catch (error) {
             console.error("Error updating order status:", error);

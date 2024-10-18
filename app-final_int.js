@@ -21,7 +21,7 @@ app.use(pkgparser.urlencoded({ extended: true })); // Parses URL-encoded request
 import { fyersModel, fyersDataSocket } from "fyers-api-v3";
 var fyers = new fyersModel({ "logs": "path where you want to save logs", "enableLogging": false });
 var appidsaved = "XBDVKT3M7D-100";
-var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MjkxMzY0NDYsImV4cCI6MTcyOTIxMTQ0NiwibmJmIjoxNzI5MTM2NDQ2LCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbkVJYy0yMmx1bXdZUnJuRjlLaTNfMVpFX0xKdDdzOWdOOTRNZDJBZEVfM0t2UGkwT3pJOWJaZWE4QndVSGZzM3lUTnBfdkhzOE92blhxY3l3VUlYSzc0WUNzWnBiY2VfYVZURTdsUFphN3pOWFd5VT0iLCJkaXNwbGF5X25hbWUiOiJBQkhJSklUSCBCWUpVIE1JTkkiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJmMTg2YjdkYzZjYzJkYmZiYmIzMjU2YTJhMGZlYjY1OGU3OWViMjYwYjhmM2UzOGViNjE1ZTUwNiIsImZ5X2lkIjoiWUEyMzIxMSIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.y0lNZLe3Pu1560MDnWSH4tDoF0AyBkwCoKMmQoUeKJE";
+var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MjkyMjI2OTUsImV4cCI6MTcyOTI5NzgxNSwibmJmIjoxNzI5MjIyNjk1LCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbkVkZ25uUVo3R1lvOVU0MUt5T0pyU3R1cFJyS2J6VHpCU0ZKcV9ia2dLZEpEdDRrTnJLa0ZjTnRTWFo4LXctWS1YQ0tRanFHb2tTSi14UTN6ekRmWW1PQmZpOG5TU1pHbEpPTlRRTko4YzJpb3R3Yz0iLCJkaXNwbGF5X25hbWUiOiJBQkhJSklUSCBCWUpVIE1JTkkiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJmMTg2YjdkYzZjYzJkYmZiYmIzMjU2YTJhMGZlYjY1OGU3OWViMjYwYjhmM2UzOGViNjE1ZTUwNiIsImZ5X2lkIjoiWUEyMzIxMSIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.EAdgVMouZtAewtRIlvfa8aieyuUZnaq1k-w8bXPaAB4";
 
 
 
@@ -77,7 +77,7 @@ var spotPrice = 0;
 
 var Orderstatus = 'wait';
 var fyersSaved = null;
-var acceptedProfit = 0.1;//change
+var acceptedProfit = 0.2;//change
 var qty = 15;
 var Order_Information = {
   parentOrder: {
@@ -166,15 +166,14 @@ async function getexactrangePrice(symbolarr) {
         //console.log( response.d[i].v.lp + response.d[i + 2].v.lp, 'SUM', response.d[i - 1].v.lp + response.d[i + 1].v.lp)
         //console.log("i",response.d[i - 1].v.lp + response.d[i - 1].v.lp,          response.d[i].v.lp + response.d[i].v.lp,)
         if (
-          response.d[i - 1].v.lp + response.d[i + 1].v.lp > 200 &&
-          response.d[i].v.lp + response.d[i + 2].v.lp < 200
+          response.d[i - 1].v.lp + response.d[i].v.lp > 200 &&
+          response.d[i + 1].v.lp + response.d[i + 2].v.lp < 200
         ) {
           selectedceSymbolVal = response.d[i+1].n;
           selectedceSymbolPrice = response.d[i+1].v.lp;
           selectedpeSymbolVal = response.d[i].n;
           selectedpeSymbolPrice = response.d[i].v.lp;
-          //console.log(i)
-          
+          //console.log('SELECTED',    selectedceSymbolVal, selectedceSymbolPrice, selectedpeSymbolVal ,selectedpeSymbolPrice);  
           return i;
         }
       }
@@ -204,8 +203,8 @@ async function main() {
       }
 
       const spotmultiPrice = await getexactrangePrice(cepesymbolarr);
-     // console.log(spotmultiPrice)
-      if (waittillmessage == true) {
+      // /console.log(spotmultiPrice)
+      if (waittillmessage == true && spotmultiPrice != undefined) {
         waittillmessage = false;
         console.log('START',    selectedceSymbolVal, selectedceSymbolPrice, selectedpeSymbolVal ,selectedpeSymbolPrice);
       }
@@ -276,7 +275,7 @@ async function main() {
     }
 
     const intervalId = setInterval(async () => {
-      if (new Date().getHours() > 8 && new Date().getMinutes() > 14 && Orderstatus !== 'STOP') {
+      if (new Date().getHours() > 8 && new Date().getMinutes() > 14 && Orderstatus !== 'STOP' && waittillmessage == false) {
         const indexspot = await SpotPrice();
         for (let i = 0; i < 25; i++) {
           ceSymbol = `${indextype}${currentWeeklyExpiry}${Math.round(indexspot - (indexspot % optionspread)) - 300 + 100 * i
@@ -297,7 +296,56 @@ async function main() {
         }
         cepesymbolarr = [];
       }
-    }, 5000);
+
+      if (Orderstatus == 'wait' && waittillmessage == false  ) {
+        switch (saveapimessage) {
+          case 'up':
+            saveapimessage = '';
+            if (Orderstatus == 'wait') {
+              Orderstatus = 'InorderCE';
+              console.log('CEInforet', selectedceSymbolPrice, selectedceSymbolVal);
+              Order_Information = await placeBracketOrder(fyersSaved, selectedceSymbolVal, selectedceSymbolPrice, acceptedProfit, qty);
+              console.log('Waiting for loss / profit');
+  
+              Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
+              if (Past_orders.OrderType == 'stopOrder') {
+                acceptedProfit = acceptedProfit + 0.1;
+                Orderstatus = 'wait'
+                console.log('loss / Waiting for next order');
+                Order_Information = null;
+                Past_orders = null; 
+              }
+              if (Past_orders.OrderType == 'profitOrder') {
+                Orderstatus = 'STOP'
+              }
+            }
+            break;
+  
+          case 'down':
+              saveapimessage = '';
+              Orderstatus = 'InorderPE';
+              console.log('PEInforet', selectedpeSymbolPrice, selectedpeSymbolVal);
+              Order_Information = await placeBracketOrder(fyersSaved, selectedpeSymbolVal, selectedpeSymbolPrice, acceptedProfit, qty);
+              console.log('Waiting for loss / profit');
+              Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
+              if (Past_orders.OrderType == 'stopOrder') { //OrderType
+                acceptedProfit = acceptedProfit + 0.1;
+                Orderstatus = 'wait'
+                console.log('Profit / Waiting for next order');
+                Order_Information = null;
+                Past_orders = null; 
+              }
+              if (Past_orders.OrderType == 'profitOrder') {
+                Orderstatus = 'STOP'
+              }
+             break;
+        }
+      }
+    if (Orderstatus == 'STOP') {
+      console.clear();
+      console.log("GO HOME & REST");
+    }
+    }, 1000);
   } catch (error) {
     console.error("Error in main function:", error);
   }
@@ -309,54 +357,54 @@ app.post('/api/data', async (req, res) => {
   const { input1, input2, option } = req.body;
   console.log('received', req.body, 'waittillmessage', waittillmessage);
     saveapimessage = req.body;
-    if (Orderstatus == 'wait' && waittillmessage == false  ) {
-      switch (saveapimessage) {
-        case 'up':
-          saveapimessage = '';
-          if (Orderstatus == 'wait') {
-            Orderstatus = 'InorderCE';
-            console.log('CEInforet', selectedceSymbolPrice, selectedceSymbolVal);
-            Order_Information = await placeBracketOrder(fyersSaved, selectedceSymbolVal, selectedceSymbolPrice, acceptedProfit, qty);
-            console.log('Waiting for loss / profit');
+  //   if (Orderstatus == 'wait' && waittillmessage == false  ) {
+  //     switch (saveapimessage) {
+  //       case 'up':
+  //         saveapimessage = '';
+  //         if (Orderstatus == 'wait') {
+  //           Orderstatus = 'InorderCE';
+  //           console.log('CEInforet', selectedceSymbolPrice, selectedceSymbolVal);
+  //           Order_Information = await placeBracketOrder(fyersSaved, selectedceSymbolVal, selectedceSymbolPrice, acceptedProfit, qty);
+  //           console.log('Waiting for loss / profit');
 
-            Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
-            if (Past_orders.OrderType == 'stopOrder') {
-              acceptedProfit = acceptedProfit + 0.1;
-              Orderstatus = 'wait'
-              console.log('loss / Waiting for next order');
-              Order_Information = null;
-              Past_orders = null; 
-            }
-            if (Past_orders.OrderType == 'profitOrder') {
-              Orderstatus = 'STOP'
-            }
-          }
-          break;
+  //           Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
+  //           if (Past_orders.OrderType == 'stopOrder') {
+  //             acceptedProfit = acceptedProfit + 0.1;
+  //             Orderstatus = 'wait'
+  //             console.log('loss / Waiting for next order');
+  //             Order_Information = null;
+  //             Past_orders = null; 
+  //           }
+  //           if (Past_orders.OrderType == 'profitOrder') {
+  //             Orderstatus = 'STOP'
+  //           }
+  //         }
+  //         break;
 
-        case 'down':
-            saveapimessage = '';
-            Orderstatus = 'InorderPE';
-            console.log('PEInforet', selectedpeSymbolPrice, selectedpeSymbolVal);
-            Order_Information = await placeBracketOrder(fyersSaved, selectedpeSymbolVal, selectedpeSymbolPrice, acceptedProfit, qty);
-            console.log('Waiting for loss / profit');
-            Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
-            if (Past_orders.OrderType == 'stopOrder') {
-              acceptedProfit = acceptedProfit + 0.1;
-              Orderstatus = 'wait'
-              console.log('Profit / Waiting for next order');
-              Order_Information = null;
-              Past_orders = null; 
-            }
-            if (Past_orders.OrderType == 'profitOrder') {
-              Orderstatus = 'STOP'
-            }
-           break;
-      }
-    }
-  if (Orderstatus == 'STOP') {
-    console.clear();
-    console.log("GO HOME & REST");
-  }
+  //       case 'down':
+  //           saveapimessage = '';
+  //           Orderstatus = 'InorderPE';
+  //           console.log('PEInforet', selectedpeSymbolPrice, selectedpeSymbolVal);
+  //           Order_Information = await placeBracketOrder(fyersSaved, selectedpeSymbolVal, selectedpeSymbolPrice, acceptedProfit, qty);
+  //           console.log('Waiting for loss / profit');
+  //           Past_orders = await updateOrderStatus(fyersSaved, Order_Information);
+  //           if (Past_orders.OrderType == 'stopOrder') { //OrderType
+  //             acceptedProfit = acceptedProfit + 0.1;
+  //             Orderstatus = 'wait'
+  //             console.log('Profit / Waiting for next order');
+  //             Order_Information = null;
+  //             Past_orders = null; 
+  //           }
+  //           if (Past_orders.OrderType == 'profitOrder') {
+  //             Orderstatus = 'STOP'
+  //           }
+  //          break;
+  //     }
+  //   }
+  // if (Orderstatus == 'STOP') {
+  //   console.clear();
+  //   console.log("GO HOME & REST");
+  // }
 
 });
 
