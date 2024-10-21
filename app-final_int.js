@@ -21,7 +21,7 @@ app.use(pkgparser.urlencoded({ extended: true })); // Parses URL-encoded request
 import { fyersModel, fyersDataSocket } from "fyers-api-v3";
 var fyers = new fyersModel({ "logs": "path where you want to save logs", "enableLogging": false });
 var appidsaved = "XBDVKT3M7D-100";
-var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MjkyMjI2OTUsImV4cCI6MTcyOTI5NzgxNSwibmJmIjoxNzI5MjIyNjk1LCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbkVkZ25uUVo3R1lvOVU0MUt5T0pyU3R1cFJyS2J6VHpCU0ZKcV9ia2dLZEpEdDRrTnJLa0ZjTnRTWFo4LXctWS1YQ0tRanFHb2tTSi14UTN6ekRmWW1PQmZpOG5TU1pHbEpPTlRRTko4YzJpb3R3Yz0iLCJkaXNwbGF5X25hbWUiOiJBQkhJSklUSCBCWUpVIE1JTkkiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJmMTg2YjdkYzZjYzJkYmZiYmIzMjU2YTJhMGZlYjY1OGU3OWViMjYwYjhmM2UzOGViNjE1ZTUwNiIsImZ5X2lkIjoiWUEyMzIxMSIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.EAdgVMouZtAewtRIlvfa8aieyuUZnaq1k-w8bXPaAB4";
+var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3Mjk0ODE1MzYsImV4cCI6MTcyOTU1NzAxNiwibmJmIjoxNzI5NDgxNTM2LCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbkZjdEFXN3d2OHhHaFgwVUtXMFR4Q3FxQWh1NE1fcDdKamktZVdtOUlnMmlIOUF2Um51MTBCWU1KNFhpMW56bENldTQ3d0F3bHVpWXJuaEVWMHhFR3h6cU9JVjBvelRlZU9ZUzZaaEhBZmFLVTJXND0iLCJkaXNwbGF5X25hbWUiOiJBQkhJSklUSCBCWUpVIE1JTkkiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJmMTg2YjdkYzZjYzJkYmZiYmIzMjU2YTJhMGZlYjY1OGU3OWViMjYwYjhmM2UzOGViNjE1ZTUwNiIsImZ5X2lkIjoiWUEyMzIxMSIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.foOf_PyFOuuLKYUaRBmJqLFdVLXsNqiUnCu9SScqjaQ";
 
 
 
@@ -77,7 +77,7 @@ var spotPrice = 0;
 
 var Orderstatus = 'wait';
 var fyersSaved = null;
-var acceptedProfit = 0.2;//change
+var acceptedProfit = 0.1;//change
 var qty = 15;
 var Order_Information = {
   parentOrder: {

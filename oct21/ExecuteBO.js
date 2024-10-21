@@ -2,7 +2,7 @@ export async function placeBracketOrder(fyers, symbol, price, acceptedProfit, qt
     try {
         //const stopLoss = 0.05;       // Customize your stop-loss percentage
         const stopLoss = 0.1; 
-        console.log('symbol', symbol, 'price', price, 'acceptedProfit', acceptedProfit, 'stopLoss', Math.round(price * stopLoss), 'StopProfit', Math.round(price * acceptedProfit));
+        console.log('symbol', symbol, 'price', price, 'acceptedProfit', acceptedProfit, 'stopLoss',stopLoss, Math.round(price * stopLoss), 'StopProfit', Math.round(price * acceptedProfit));
         const reqBody = {
             symbol: symbol,                  // Symbol to trade
             qty: qty,                        // Quantity
